@@ -42,4 +42,4 @@ if [[ -n "$CUSTOM_INIT_SCRIPT" ]] ; then
   eval $CUSTOM_INIT_SCRIPT
 fi
 
-exec $KAFKA_HOME/bin/kafka-mirror-maker.sh --abortOnSendFail --whitelist $KAFKA_MM_WHITELIST --num.streams $KAFKA_MM_NUM_STREAMS  --consumer.config $KAFKA_HOME/config/consumer.properties --producer.config $KAFKA_HOME/config/producer.properties
+exec $KAFKA_HOME/bin/kafka-mirror-maker.sh --whitelist $KAFKA_MM_WHITELIST --num.streams $KAFKA_MM_NUM_STREAMS  --consumer.config $KAFKA_HOME/config/consumer.properties --producer.config $KAFKA_HOME/config/producer.properties
